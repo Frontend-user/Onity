@@ -5,7 +5,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+body {
+  overflow-x: hidden;
+}
 :root {
   --onity_bg: #F6F4F0;
   --Header-white-mode: #3A3433;
