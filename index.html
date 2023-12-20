@@ -113,10 +113,10 @@
             </div>
         </div>
 
-        <div class="mb-table-button">
-            <div>rate Vergleichen_</div>
+        <div class="mb-table-button-container">
+            <div class="mb-table-button">rate Vergleichen_</div>
         </div>
-        <div class="tb-bck-color2">
+        <div class="mb-tb-bck-color">
             <div class="outer-container">
                 <div class="table-section">
                     <table class="table table-borderless align-middle   ">
@@ -919,6 +919,19 @@
     </div>
 </div>
 <script>
+
+    const mbShowTableBtn = document.querySelector(".mb-table-button")
+    const mbTableSection = document.querySelector(".mb-tb-bck-color")
+    mbShowTableBtn.addEventListener('click', () => {
+        if (mbTableSection.style.display === "block") {
+            mbTableSection.style.display = "none"
+            mbShowTableBtn.textContent = "rate Vergleichen_"
+        } else {
+            mbTableSection.style.display = "block"
+            mbShowTableBtn.textContent = "schließsen"
+        }
+
+    })
     const showTableBtn = document.querySelector(".cards-section__button")
     const tableSection = document.querySelector(".tb-bck-color")
     showTableBtn.addEventListener('click', () => {

@@ -43,7 +43,10 @@
   background: var(--onity_green, #3D503E);
 
 }
-
+.mb-tb-bck-color {
+  display: none;
+  background: var(--onity_bg, #F6F4F0);
+}
 .tb-bck-color {
   display: none;
   background: var(--onity_bg, #F6F4F0);
@@ -856,10 +859,13 @@
       }
     }
   }
+
+  .mb-table-button-container {
+    display: flex;
+    justify-content: center;
+  }
 .mb-table-button {
-  display: flex;
-  justify-content: center;
-  div {
+  margin-bottom: 20px;
     display: flex;
     padding: 14px 24px;
     justify-content: center;
@@ -876,7 +882,6 @@
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
-  }
 
 }
   .table-section {

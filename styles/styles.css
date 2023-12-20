@@ -40,6 +40,11 @@
   background: var(--onity_green, #3D503E);
 }
 
+.mb-tb-bck-color {
+  display: none;
+  background: var(--onity_bg, #F6F4F0);
+}
+
 .tb-bck-color {
   display: none;
   background: var(--onity_bg, #F6F4F0);
@@ -726,11 +731,12 @@
     border: 1px solid var(--onity_orange, #E5730A);
     background: var(--Text-dark-mode, rgba(255, 255, 255, 0.98));
   }
-  .mb-table-button {
+  .mb-table-button-container {
     display: flex;
     justify-content: center;
   }
-  .mb-table-button div {
+  .mb-table-button {
+    margin-bottom: 20px;
     display: flex;
     padding: 14px 24px;
     justify-content: center;
